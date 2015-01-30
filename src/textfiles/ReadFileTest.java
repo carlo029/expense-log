@@ -14,6 +14,7 @@ public class ReadFileTest {
 	@Test
 	public void testOpenFile() {
 		fail("Not yet implemented");
+		//assertEquals("asdf123",ReadFile.OpenFile());
 	}
 
 	@Test
