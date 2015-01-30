@@ -10,6 +10,7 @@
 
 package textfiles;
 import java.io.IOException;
+import java.util.Scanner;
 
 //used http://www.homeandlearn.co.uk/java/read_a_textfile_in_java.html as reference for this code
 
@@ -20,7 +21,11 @@ public class FileData {
 	 * @throws IOException
 	 */
 		
-		String file_name = "C:/Users/Carlo/Desktop/cie123project.txt";
+		String file_name;
+		
+		Scanner userinput = new Scanner (System.in);
+		System.out.print("Please enter file to open: ");
+		file_name =  userinput.nextLine();
 		
 		try {
 			ReadFile file =  new ReadFile(file_name);
