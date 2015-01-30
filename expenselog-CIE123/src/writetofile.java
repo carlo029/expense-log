@@ -10,7 +10,7 @@ import java.io.PrintWriter;
 import java.io.IOException;
 
 public class writetofile {
-	/*
+	/**
 	 * This determines the file name and location.
 	 */
 	private String path;
@@ -18,7 +18,7 @@ public class writetofile {
 	 * This allows the apending of the new text line. If false, the previous file written will be deleted. The new text line will be created.
 	 */
 	private boolean append_to_file= true;
-	/*
+	/**
 	 * This determines the file location and name.
 	 * @param string file_path
 	 * @return path
@@ -26,7 +26,7 @@ public class writetofile {
 	public writetofile(String file_path){
 		path=file_path;
 	}
-	/*
+	/**
 	 * A file is specified where the new text line will be appended.
 	 * @ param String file_path and authorization for appending
 	 * @return append value
@@ -35,7 +35,7 @@ public class writetofile {
 		path= file_path;
 		append_to_file= append_value;
 	}
-	/*
+	/**
 	 * writeToFile handles the appending to a text document. It will receive the dile name and location and teh append value to use to append text.
 	 * FileWriter uses bytes but PrintWriter can output readable text. %s describes a string of characters while %n  means a new line.
 	 * @param textline
@@ -52,7 +52,7 @@ public class writetofile {
 		 print_line.close();
 		
 	}
-	/*
+	/**
 	 * @ This is a text main
 	 */
 	
