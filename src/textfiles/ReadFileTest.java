@@ -8,7 +8,7 @@ public class ReadFileTest {
 
 	@Test
 	public void testReadFile() {
-		//assertEquals()
+		//assertEquals("file reader", true, ReadFile.ReadFile("C:\Users\Carlo\Desktop\cie123project.txt"));
 	}
 
 	@Test
@@ -19,7 +19,7 @@ public class ReadFileTest {
 
 	@Test
 	public void testReadLines() {
-		fail("Not yet implemented");
+		//assertEquals("read lines 1",1,ReadFile.readLines());
 	}
 
 }

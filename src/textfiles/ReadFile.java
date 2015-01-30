@@ -14,18 +14,23 @@ import java.io.FileReader;
 import java.io.BufferedReader;
 
 public class ReadFile {
-	/*
+	/**
 	 * This function gets the file directory from the FileData class and opens the file
 	 */
 	private String path;
-	/*
+	/**
 	 * @param String file_path
 	 * the variable file_path is the directory of the file to be opened
 	 */
 	public ReadFile(String file_path){
 		path = file_path;
+		
 	}
-	
+	/**
+	 * this gets each line of the text file one by one and stores it in a buffer for display later. textData contains the lines of the text file.
+	 * @return textData
+	 * @throws IOException
+	 */
 	public String[] OpenFile() throws IOException {
 		
 		/*
@@ -50,8 +55,12 @@ public class ReadFile {
 		textReader.close( );
 		return textData;
 	}
-	
-	int readLines() throws IOException{
+	/**
+	 * this function gets the number of lines in the text file
+	 * @return numberOfLines
+	 * @throws IOException
+	 */
+	 int readLines() throws IOException{
 		/*
 		 * this function gets the number of lines in the text file
 		 * @return numberOfLines

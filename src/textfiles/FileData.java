@@ -16,7 +16,7 @@ import java.util.Scanner;
 
 public class FileData {
 	public static void main (String args[]) throws IOException{
-	/*
+	/**
 	 * This determines the directory of the file and outputs the lines of the text file
 	 * @throws IOException
 	 */
