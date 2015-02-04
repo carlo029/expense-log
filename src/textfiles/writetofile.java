@@ -38,7 +38,7 @@ public class writetofile {
 		append_to_file= append_value;
 	}
 	/**
-	 * writeToFile handles the appending to a text document. It will receive the dile name and location and teh append value to use to append text.
+	 * writeToFile handles the appending to a text document. It will receive the file name and location and the append value to use to append text.
 	 * FileWriter uses bytes but PrintWriter can output readable text. %s describes a string of characters while %n  means a new line.
 	 * @param textline
 	 * @return text on file

@@ -4,6 +4,9 @@
 package textfiles;
 
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
 
 import textfiles.FileData;
@@ -20,10 +23,13 @@ public class Main {
 	 * @param args
 	 */
 	public static void main(String[] args) throws IOException {
+		int flag = 1;
+		while (flag==1)
+		{
 		// TODO Auto-generated method stub
 		String choice;
 		Scanner choicein = new Scanner (System.in);
-		System.out.println("What do you want to do? (enter 1 or 2)");
+		System.out.println("What do you want to do? (enter 1 or 2. Enter exit to exit the program.)");
 		System.out.println("1.Read expense log");
 		System.out.println("2. Input expense");
 		choice = choicein.nextLine();
@@ -58,14 +64,28 @@ public class Main {
 		file_name = userinput.nextLine();
 		
 		writetofile data= new writetofile(file_name, true);
+		System.out.println("Enter value to write to text file.");
+		String logvalue;
+		int number = Integer.parseInt(userinput.nextLine().replaceAll("[^\\d]", ""));
+		logvalue=String.valueOf(number);
+		DateFormat date = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+		Date logdate = new Date();
+		String dateoflog;
+		dateoflog = date.format(logdate);
+		data.writeToFile(logvalue+"\t"+dateoflog);
 		
-		data.writeToFile("This is a test run.");
+		System.out.println("The string: " + logvalue + " has been written on the file.");}
 		
-		System.out.println("Text has been written on the file.");}
-		//else
-		//{System.out.println("Invalid input. Please try again.");}
+		else if (choice.equals("exit"))
+		{
+			System.out.println("Program will not exit...");
+			flag=0;
+		}
+		else
+		{System.out.println("Invalid input. Please try again.");}
 		
 
+	}
 	}
 
 }
