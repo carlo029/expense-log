@@ -12,6 +12,8 @@ package textfiles;
 import java.io.IOException;
 import java.io.FileReader;
 import java.io.BufferedReader;
+import textfiles.writetofile;
+
 
 public class ReadFile {
 	/*
