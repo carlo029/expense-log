@@ -1,4 +1,4 @@
-/*
+/**
  * This class opens a text file in a specified directory and then outputs the lines of the text file to the java console
  * @author Carlo Antioquia
  * @version 1
@@ -16,7 +16,7 @@ import java.util.Scanner;
 
 public class FileData {
 	public static void main (String args[]) throws IOException{
-	/*
+	/**
 	 * This determines the directory of the file and outputs the lines of the text file
 	 * @throws IOException
 	 */
