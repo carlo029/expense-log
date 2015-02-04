@@ -16,6 +16,7 @@ import textfiles.writetofile;
 
 
 public class ReadFile {
+	
 	/**
 	 * This function gets the file directory from the FileData class and opens the file
 	 */
@@ -74,3 +75,4 @@ public class ReadFile {
 		return numberOfLines;
 	}
 }
+
