@@ -19,7 +19,8 @@ import textfiles.ReadFile;
  */
 public class Main {
 
-	/**This main function is the one that handles user interaction. It calls the read and write functions as needed by the user.
+	/**
+	 * This main function is the one that handles user interaction. It calls the read and write functions as needed by the user.
 	 * @param args
 	 */
 	public static void main(String[] args) throws IOException {

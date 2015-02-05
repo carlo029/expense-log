@@ -1,15 +1,16 @@
+
 /**
  * This is the Junit test case for the writetofile class.
  * @author Coleen Araza
  * @version 1
  */
 
+
 package textfiles;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
-
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -28,7 +29,7 @@ public class writetofileTest {
 	}
 
 	private void assertTrue(Object writetofile) {
-		// TODO Auto-generated method stub	
+
 	}
 
 	@Test
