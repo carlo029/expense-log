@@ -1,10 +1,42 @@
-/*
+/**
+ * This is the Junit test case for the writetofile class.
+ * @author Coleen Araza
+ * @version 1
+ */
+
 package textfiles;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
 public class writetofileTest {
 
+	private String path;
+	
+	private boolean append_to_file= true;
+	
 	@Test
 	public void testWritetofileString() {
-		assertEquals("C:/Users/Dell/Documents/CIE 123/Project/data.txt", "C:/Users/Dell/Documents/CIE 123/Project/data.txt", writetofile("C:/Users/Dell/Documents/CIE 123/Project/data.txt"));
+		path= "C:/Users/Dell/Documents/CIE 123/Project/data.txt"; 
+		assertTrue( writetofile("C:/Users/Dell/Documents/CIE 123/Project/data.txt"));
+	}
+
+	private void assertTrue(Object writetofile) {
+		// TODO Auto-generated method stub	
+	}
+
+	@Test
+	public void testWritetofileStringBoolean() {
+		path= "C:/Users/Dell/Documents/CIE 123/Project/data.txt"; 
+		assertTrue( writetofile("C:/Users/Dell/Documents/CIE 123/Project/data.txt"));
+		append_to_file= true; 
+		assertTrue( writetofile("C:/Users/Dell/Documents/CIE 123/Project/data.txt"));
 	}
 
 	private Object writetofile(String string) {
@@ -13,18 +45,18 @@ public class writetofileTest {
 	}
 
 	@Test
-	public void testWritetofileStringBoolean() {
-		fail("Not yet implemented");
+	public void testWriteToFile() throws IOException {
+		FileWriter write = new FileWriter("C:/Users/Dell/Documents/CIE 123/Project/data.txt", true);
+		PrintWriter print_line= new PrintWriter(write);
+		print_line.printf("%s" + "%n", "Hello");
+		 
+		 print_line.close();
+		assertTrue(writeToFile("Hello"));
+		
 	}
 
-	@Test
-	public void testWriteToFile() {
-		fail("Not yet implemented");
+	private Object writeToFile(String string) {
+		// TODO Auto-generated method stub
+		return null;
 	}
-
-	@Test
-	public void testMain() {
-		fail("Not yet implemented");
-	}
-
-}*/
+}

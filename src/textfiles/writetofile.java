@@ -1,4 +1,4 @@
-/*
+/**
  * This class writes text on a specific file. New text lines are appended to the text file.
  * @author Coleen Araza
  * @version 1
