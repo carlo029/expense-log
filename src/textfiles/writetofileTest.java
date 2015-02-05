@@ -29,7 +29,6 @@ public class writetofileTest {
 	}
 
 	private void assertTrue(Object writetofile) {
-
 	}
 
 	@Test
