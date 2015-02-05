@@ -1,6 +1,6 @@
 /**
- * This is the Junit test case for the Readfile class.
  * @author Coleen Araza
+ * This is the Junit test case for the Readfile class.
  * @version 1
  */
 

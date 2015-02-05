@@ -16,8 +16,8 @@ public class writetofile {
 	 * This determines the file name and location.
 	 */
 	private String path;
-	/*
-	 * This allows the apending of the new text line. If false, the previous file written will be deleted. The new text line will be created.
+	/**
+	 * This allows the appending of the new text line. If false, the previous file written will be deleted. The new text line will be created.
 	 */
 	private boolean append_to_file= true;
 	/**
