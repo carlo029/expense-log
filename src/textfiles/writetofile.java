@@ -9,6 +9,7 @@ package textfiles;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class writetofile {
 	/**
@@ -37,7 +38,7 @@ public class writetofile {
 		append_to_file= append_value;
 	}
 	/**
-	 * writeToFile handles the appending to a text document. It will receive the dile name and location and teh append value to use to append text.
+	 * writeToFile handles the appending to a text document. It will receive the file name and location and the append value to use to append text.
 	 * FileWriter uses bytes but PrintWriter can output readable text. %s describes a string of characters while %n  means a new line.
 	 * @param textline
 	 * @return text on file
@@ -57,15 +58,20 @@ public class writetofile {
 	 * @ This is a text main
 	 */
 	
-	public static void main(String[] args) throws IOException {
-		String file_name = "C:/Users/Dell/Documents/CIE 123/Project/data.txt";
+	/*public static void main(String[] args) throws IOException {
+		String file_name;
+		
+		Scanner userinput = new Scanner(System.in);
+		System.out.println("Please enter file to write to");
+		file_name = userinput.nextLine();
+		
 		writetofile data= new writetofile(file_name, true);
 		
 		data.writeToFile("This is a test run.");
 		
 		System.out.println("Text has been written on the file.");	
 
-	}
+	}*/
 
 }
 

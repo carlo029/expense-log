@@ -1,4 +1,4 @@
-/*
+/**
  * This class opens a text file in a specified directory and then outputs the lines of the text file to the java console
  * @author Carlo Antioquia
  * @version 1
@@ -15,13 +15,13 @@ import java.util.Scanner;
 //used http://www.homeandlearn.co.uk/java/read_a_textfile_in_java.html as reference for this code
 
 public class FileData {
-	public static void main (String args[]) throws IOException{
-	/*
+//	public static void main (String args[]) throws IOException{
+	/**
 	 * This determines the directory of the file and outputs the lines of the text file
 	 * @throws IOException
 	 */
 		
-		String file_name;
+	/*	String file_name;
 		
 		Scanner userinput = new Scanner (System.in);
 		System.out.print("Please enter file to open: ");
@@ -42,7 +42,8 @@ public class FileData {
 			System.out.println(e.getMessage());
 		}
 		
-	}
+	}*/
 	
 
-}
+	}
+

@@ -1,5 +1,5 @@
 /*
-package textfiles;
+package textfiles.Tests;
 public class writetofileTest {
 
 	@Test
