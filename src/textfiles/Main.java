@@ -205,7 +205,7 @@ public class Main {
 		//this is where the date code was
 		data.writeToFile(logvalue+"\t"+dateoflog);
 		
-		System.out.println("The string: " + logvalue + " has been written on the file.");}
+		System.out.println("The amountal: " + logvalue + " has been written on the file.");}
 		
 		else if (choice.equals("exit"))
 		{
@@ -215,8 +215,6 @@ public class Main {
 		else
 		{System.out.println("Invalid input. Please try again.");}
 		
-
 	}
 	}
-
 }

@@ -1,16 +1,16 @@
-/**
- * This class writes text on a specific file. New text lines are appended to the text file.
- * @author Coleen Araza
- * @version 1
- * Source: http://www.homeandlearn.co.uk/java/write_to_textfile.html
- */
+
 package textfiles;
 
 import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.io.IOException;
 import java.util.Scanner;
-
+/**
+ * This class writes text on a specific file. New text lines are appended to the text file.
+ * @author Coleen Araza
+ * @version 1
+ * Source: http://www.homeandlearn.co.uk/java/write_to_textfile.html
+ */
 public class writetofile {
 	/**
 	 * This determines the file name and location.

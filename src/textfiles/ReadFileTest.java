@@ -1,8 +1,4 @@
-/**
- * @author Coleen Araza
- * This is the Junit test case for the Readfile class.
- * @version 1
- */
+
 
 package textfiles;
 
@@ -14,7 +10,11 @@ import java.io.FileReader;
 import java.io.IOException;
 
 import org.junit.Test;
-
+/**
+ * This is the Junit test case for the Readfile class.
+ *  @author Coleen Araza
+ * @version 1
+ */
 public class ReadFileTest {
 
 	private String path;
