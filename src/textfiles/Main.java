@@ -63,11 +63,14 @@ public class Main {
 			int i;
 			for ( i=0; i < aryLines.length; i++ ) {
 			
-			System.out.println( aryLines[ i ] ) ;
+		//	System.out.println( aryLines[ i ] ) ;
 			
 			temp=aryLines[i];
 			//start code for monthly sum
 			if (duration.equals("1"))	
+				/**
+				 * this part of the code handles the display of the monthly expenses
+				 */
 			{
 			//start of loop for sum
 			for(int x=0; x<temp.length(); x++)
@@ -76,6 +79,7 @@ public class Main {
 			{
 				if (temp.contains(dateoflog.substring(0,7)))
 				{	
+					System.out.println( aryLines[ i ] ) ;
 				for (int j=0; j<x; j++)
 					{//insert function for storing the int into a variable
 					numberholder += temp.charAt(j);
@@ -91,15 +95,20 @@ public class Main {
 			}// end of code for monthly sum
 			
 			//start code for weekly sum
-			if (duration.equals("2"))	
+			if (duration.equals("2"))
+				/**
+				 * This part of the code handles the display of the weekly expense as well as the total expense for the week
+				 */
 			{
 			//start of loop for sum
 				for(int x=0; x<temp.length(); x++)
 				{
 				if (temp.charAt(x)=='\t')//insert string comparison function here. If the character in the string is equal to a tab, then for arylines i to 0, store to an int value
 				{
-					if (Integer.parseInt(temp.substring(x+7,x+10))>=Integer.parseInt(dateoflog.substring(7,10))-3 && Integer.parseInt(temp.substring(x+7,x+10))<=Integer.parseInt(dateoflog.substring(7,10))+3 )
+					
+					if (Integer.parseInt(temp.substring(x+9,x+11))>=Integer.parseInt(dateoflog.substring(8,10))-3 && Integer.parseInt(temp.substring(x+9,x+11))<=Integer.parseInt(dateoflog.substring(8,10))+3 )
 					{	
+						System.out.println( aryLines[ i ] ) ;
 					for (int j=0; j<x; j++)
 						{//insert function for storing the int into a variable
 						numberholder += temp.charAt(j);
@@ -116,6 +125,9 @@ public class Main {
 			
 			//start code for daily sum
 			if (duration.equals("3"))	
+				/**
+				 * this part of the code handles the display of expenses for the day
+				 */
 			{
 			//start of loop for sum
 				for(int x=0; x<temp.length(); x++)
@@ -124,6 +136,7 @@ public class Main {
 				{
 					if (temp.contains(dateoflog.substring(0,10)))
 					{	
+						System.out.println( aryLines[ i ] ) ;
 					for (int j=0; j<x; j++)
 						{//insert function for storing the int into a variable
 						numberholder += temp.charAt(j);
@@ -140,8 +153,12 @@ public class Main {
 			
 			//start code for all sum
 			if (duration.equals("4"))	
+				/**
+				 * this part of the code handles the display of all expense logs
+				 */
 			{
 			//start of loop for sum
+				System.out.println( aryLines[ i ] ) ;
 				for(int x=0; x<temp.length(); x++)
 				{
 				if (temp.charAt(x)=='\t')//insert string comparison function here. If the character in the string is equal to a tab, then for arylines i to 0, store to an int value
