@@ -200,7 +200,7 @@ public class Main {
 		writetofile data= new writetofile(file_name, true);
 		System.out.println("Enter value to write to text file.");
 		String logvalue;
-		int number = Integer.parseInt(userinput.nextLine().replaceAll("[^\\d]", ""));
+		int number = Integer.parseInt(userinput.nextLine().replaceAll("[^\\d]", "").replaceAll("\\s+",""));
 		logvalue=String.valueOf(number);
 		//this is where the date code was
 		data.writeToFile(logvalue+"\t"+dateoflog);
